@@ -38,7 +38,7 @@ namespace TShapedFoundation.TestCases
 
         /// </summary>
         [Test]
-        public void LoginWithValidUser()
+        public void SearchProduct_ShouldSuccess()
         {
             homePage = new HomePage(driver);
             var womenTshirtPage =  homePage.GoToWomenTshirtPage();

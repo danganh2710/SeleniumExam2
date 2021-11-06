@@ -37,7 +37,7 @@ namespace TShapedFoundation.TestCases
         /// 6. Click register and validate to make sure user redirect to account information page with user name is correct
         /// </summary>
         [Test]
-        public void LoginWithValidUser()
+        public void RigisterAccount_ShouldSuccess()
         {
             var customer = new CustomerRegisterModel()
             {
