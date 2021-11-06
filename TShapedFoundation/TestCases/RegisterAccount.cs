@@ -27,6 +27,15 @@ namespace TShapedFoundation.TestCases
             driver.Quit();
         }
 
+        /// <summary>
+        /// Test case: 
+        /// 1. Go to home page
+        /// 2. Click sign in
+        /// 3. Input email. make sure email is difference each time test case is run
+        /// 4. Click create account.
+        /// 5. In account page. Enter your Personal Information, Address and Contact info. the test case do not required input all the field so only fill the required field
+        /// 6. Click register and validate to make sure user redirect to account information page with user name is correct
+        /// </summary>
         [Test]
         public void LoginWithValidUser()
         {
@@ -43,6 +52,7 @@ namespace TShapedFoundation.TestCases
                 EmailName="anhdangh",
                 EamilAddressName = "@gmail.com"
             };
+
 
             homePage = new HomePage(driver);
             var createAccountPage = homePage.GoToCreateAccountPage();

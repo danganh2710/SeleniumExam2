@@ -25,6 +25,18 @@ namespace TShapedFoundation.TestCases
             driver.Quit();
         }
 
+        /// <summary>
+        /// Test case:
+        /// 1. Open link http://automationpractice.com/index.php
+        /// 2. Move your cursor over Women's link.
+        /// 3. Click on sub menu 'T-shirts'
+        /// 4. Get Name/Text of the first product displayed on the page. 
+        /// 5. Now enter the same product name in the search bar present on top of page and click search button.
+        /// 6. Validate that same product is displayed on searched page with same details which were displayed on T-Shirt's page.
+        ///     Test case do not mention which detail field need to check so we check: productID to make sure it is same item. 
+        ///     For detail: check the image source, lablel and prise 
+
+        /// </summary>
         [Test]
         public void LoginWithValidUser()
         {

@@ -15,11 +15,11 @@ namespace TShapedFoundation.PageObjects
         {
         }
 
-        public CreateAccountInforPage GotoCreateAccountInfoPage(string emailName, string emailAddress)
+        public RegisterPage GotoCreateAccountInfoPage(string emailName, string emailAddress)
         {
             SendKeyToElement(EmailCreateInput, CommonUtilities.CreateEmailAddress(emailName, emailAddress));
             ClickToElement(SubmitCreateButton);
-            return new CreateAccountInforPage(driver);
+            return new RegisterPage(driver);
         }
     }
 }
